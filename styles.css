@@ -1,30 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
 #grid-container {
   display: grid;
   grid-template-columns: repeat(3, 100px);
   gap: 10px;
-  margin: 30px auto;
-  width: max-content;
+  justify-content: center;
+  margin: 20px auto;
 }
 
 .grid-item {
   width: 100px;
   height: 100px;
   background-color: transparent;
+  border: 2px solid #555;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
-  border: 1px solid black;
+  font-size: 22px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .controls {
-  text-align: center;
   margin-top: 20px;
 }
 
-.controls input,
-.controls button {
+input {
   padding: 8px;
+  margin: 0 5px;
+}
+
+button {
+  padding: 10px 14px;
   margin: 5px;
-  font-size: 16px;
+  cursor: pointer;
 }
